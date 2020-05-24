@@ -1,2 +1,3 @@
 # python-practice-001
-Simple and basic python exercises.
+
+Let's start with the basics.
