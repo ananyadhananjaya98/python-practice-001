@@ -1,0 +1,30 @@
+x = int(input())
+set1 = set(input().split())
+
+y = int(input())
+set2 = set(input().split())
+
+set3 = set1.intersection(set2)
+
+for i in set3:
+    if i in set1 and i in set2:
+        set1.remove(i)
+        set2.remove(i)
+    else:
+        if i in set1:
+            set1.remove(i)
+        else:
+            set2.remove(i)
+
+list1 =[]
+
+for i in set1:
+    list1.append(int(i))
+for j in set2:
+    list1.append(int(j))
+
+list1.sort()
+
+for i in list1:
+    print(i)
+
